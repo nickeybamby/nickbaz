@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Nicholas Obazei - Technical Project Manager & Frontend Developer",
   description: "Experienced technical project manager and frontend developer specializing in React, Next.js, and Agile methodologies. Available for new projects and consulting opportunities.",
+  icons: {
+    icon: "/favicon.ico", 
+  },
   keywords: [
     "Nicholas Obazei",
     "Technical Project Manager",
