@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const blogPosts = [
   {
@@ -117,9 +118,11 @@ export default function Blog() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative">
-                    <img
+                    <Image
                       src={blogPosts[0].image}
                       alt={blogPosts[0].title}
+                      width={500}
+                      height={400}
                       className="w-full h-64 md:h-full object-cover"
                     />
                   </div>

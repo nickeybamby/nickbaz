@@ -1,7 +1,8 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -18,10 +19,10 @@ export default function About() {
               <h1 className="text-4xl lg:text-6xl font-bold mb-6">
                 Nice to meet you!
               </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                I'm Nicholas Obazei, a passionate technical project manager and frontend developer 
-                with over 4 years of experience delivering exceptional digital experiences.
-              </p>
+               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                 I&apos;m Nicholas Obazei, a passionate technical project manager and frontend developer 
+                 with over 4 years of experience delivering exceptional digital experiences.
+               </p>
             </div>
           </div>
         </section>
@@ -45,9 +46,11 @@ export default function About() {
                 </div>
               </div>
               <div className="relative">
-                <img
+                <Image
                   src="https://res.cloudinary.com/dt7fmvznd/image/upload/v1759535782/ChatGPT_Image_Oct_4_2025_12_46_15_AM_hdhxx1.jpg"
-                  alt="Nick Baz working"
+                  alt="Nicholas Obazei working"
+                  width={500}
+                  height={600}
                   className="w-full h-[600px] object-cover rounded-2xl shadow-2xl"
                 />
               </div>
@@ -94,7 +97,7 @@ export default function About() {
                   <CardTitle>Collaborative</CardTitle>
                   <CardDescription>
                     The best solutions come from diverse perspectives. I believe in fostering 
-                    an environment where everyone's voice is heard and valued.
+                    an environment where everyone&apos;s voice is heard and valued.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -104,7 +107,7 @@ export default function About() {
                   <div className="text-4xl mb-2">📈</div>
                   <CardTitle>Continuous Learning</CardTitle>
                   <CardDescription>
-                    Technology evolves rapidly, and so do I. I'm committed to staying current 
+                    Technology evolves rapidly, and so do I. I&apos;m committed to staying current 
                     with the latest tools, methodologies, and best practices.
                   </CardDescription>
                 </CardHeader>
@@ -126,7 +129,7 @@ export default function About() {
                   <div className="text-4xl mb-2">🎨</div>
                   <CardTitle>Quality-Focused</CardTitle>
                   <CardDescription>
-                    Good enough isn't good enough. I take pride in delivering work that 
+                    Good enough isn&apos;t good enough. I take pride in delivering work that 
                     exceeds expectations and stands the test of time.
                   </CardDescription>
                 </CardHeader>
@@ -234,7 +237,7 @@ export default function About() {
               Ready to work together?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              I'm always excited to take on new challenges and help bring your vision to life.
+              I&apos;m always excited to take on new challenges and help bring your vision to life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
