@@ -342,8 +342,8 @@ export default function Projects() {
               Ready to Start Your Project?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Let&apos;s discuss how I can help bring your vision to life with proven
-              expertise in project management and frontend development.
+              Let&apos;s discuss how I can help bring your vision to life with
+              proven expertise in project management and frontend development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button

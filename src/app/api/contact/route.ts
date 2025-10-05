@@ -1,20 +1,21 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, company, projectType, budget, timeline, message } = body;
+    const { name, email, company, projectType, budget, timeline, message } =
+      body;
 
     // Basic validation
     if (!name || !email || !message) {
       return NextResponse.json(
-        { error: 'Name, email, and message are required' },
+        { error: "Name, email, and message are required" },
         { status: 400 }
       );
     }
 
     // Log the form data (in production, you would send this to an email service)
-    console.log('Contact form submission:', {
+    console.log("Contact form submission:", {
       name,
       email,
       company,
@@ -22,7 +23,7 @@ export async function POST(request: NextRequest) {
       budget,
       timeline,
       message,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
     });
 
     // Here you would integrate with an email service like:
@@ -35,21 +36,19 @@ export async function POST(request: NextRequest) {
     // - Netlify Forms
     // - Vercel's built-in email functionality
 
-  // For now, we&apos;ll just return a success response
+    // For now, we&apos;ll just return a success response
     return NextResponse.json(
-      { 
-        message: 'Message received successfully!',
-        success: true 
+      {
+        message: "Message received successfully!",
+        success: true,
       },
       { status: 200 }
     );
-
   } catch (error) {
-    console.error('Contact form error:', error);
+    console.error("Contact form error:", error);
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: "Internal server error" },
       { status: 500 }
     );
   }
 }
-

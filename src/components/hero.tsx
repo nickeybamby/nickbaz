@@ -21,8 +21,8 @@ export function Hero() {
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
                 I specialize in delivering complex technical projects while
-                building beautiful, user-centered frontend experiences. Let&apos;s
-                create something amazing together.
+                building beautiful, user-centered frontend experiences.
+                Let&apos;s create something amazing together.
               </p>
             </div>
 
