@@ -139,7 +139,7 @@ export default function About() {
         </section>
 
         {/* Experience Timeline */}
-        <section className="py-24">
+        {/* <section className="py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">My Journey</h2>
@@ -228,7 +228,7 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="py-24 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
