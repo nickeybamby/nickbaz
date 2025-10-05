@@ -14,15 +14,15 @@ export function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <Badge variant="secondary" className="w-fit">
-                Technical Project Manager 
+                Technical Project Manager
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-                Hi, I'm{" "}
-                <span className="text-primary">Nicholas</span>
+                Hi, I'm <span className="text-primary">Nicholas</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
-                I specialize in delivering complex technical projects while building beautiful, 
-                user-centered frontend experiences. Let's create something amazing together.
+                I specialize in delivering complex technical projects while
+                building beautiful, user-centered frontend experiences. Let's
+                create something amazing together.
               </p>
             </div>
 
@@ -30,7 +30,12 @@ export function Hero() {
               <Button asChild size="lg" className="text-lg px-8 py-6">
                 <Link href="/contact">Start a Project</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 py-6"
+              >
                 <Link href="/about">Learn More</Link>
               </Button>
             </div>
@@ -39,22 +44,28 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-8 pt-8 border-t">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">Projects Delivered</div>
+                <div className="text-sm text-muted-foreground">
+                  Projects Delivered
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">4+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-sm text-muted-foreground">
+                  Years Experience
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">100%</div>
-                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+                <div className="text-sm text-muted-foreground">
+                  Client Satisfaction
+                </div>
               </div>
             </div>
           </div>
 
           {/* Right Column - Image */}
           <div className="relative">
-              <div className="relative z-10">
+            <div className="relative z-10">
               <Image
                 src="https://res.cloudinary.com/dt7fmvznd/image/upload/v1759535782/ChatGPT_Image_Oct_4_2025_12_46_15_AM_hdhxx1.jpg"
                 alt="Nicholas - Technical Project Manager"
@@ -74,7 +85,7 @@ export function Hero() {
                 </div>
               </div>
             </div>
-            
+
             {/* Background decoration */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl transform rotate-3 scale-105 -z-10"></div>
           </div>
