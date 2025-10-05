@@ -49,32 +49,32 @@ const skillCategories = [
   }
 ];
 
-const certifications = [
-  {
-    name: "Certified Scrum Master (CSM)",
-    issuer: "Scrum Alliance",
-    year: "2023",
-    icon: "🏆"
-  },
-  {
-    name: "Project Management Professional (PMP)",
-    issuer: "PMI",
-    year: "2022",
-    icon: "📜"
-  },
-  {
-    name: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    year: "2023",
-    icon: "☁️"
-  },
-  {
-    name: "Google Analytics Certified",
-    issuer: "Google",
-    year: "2022",
-    icon: "📈"
-  }
-];
+// const certifications = [
+//   {
+//     name: "Certified Scrum Master (CSM)",
+//     issuer: "Scrum Alliance",
+//     year: "2023",
+//     icon: "🏆"
+//   },
+//   {
+//     name: "Project Management Professional (PMP)",
+//     issuer: "PMI",
+//     year: "2022",
+//     icon: "📜"
+//   },
+//   {
+//     name: "AWS Certified Cloud Practitioner",
+//     issuer: "Amazon Web Services",
+//     year: "2023",
+//     icon: "☁️"
+//   },
+//   {
+//     name: "Google Analytics Certified",
+//     issuer: "Google",
+//     year: "2022",
+//     icon: "📈"
+//   }
+// ];
 
 export function Skills() {
   return (
