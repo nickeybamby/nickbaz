@@ -474,11 +474,11 @@ export default function FrontendDevelopment() {
         <section className="py-24 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Let's Build Something Amazing
+              Let&apos;s Build Something Amazing
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
               Ready to create a modern, fast, and beautiful web application?
-              Let's discuss your project.
+              Let&apos;s discuss your project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button

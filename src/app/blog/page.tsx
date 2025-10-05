@@ -76,7 +76,7 @@ const blogPosts = [
     id: 6,
     title: "The Rise of TypeScript in Modern Web Development",
     excerpt:
-      "Why TypeScript has become the standard for large-scale JavaScript applications and how it's changing the way we build web apps.",
+  "Why TypeScript has become the standard for large-scale JavaScript applications and how it&apos;s changing the way we build web apps.",
     image:
       "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=500&h=300&fit=crop",
     category: "Frontend Development",

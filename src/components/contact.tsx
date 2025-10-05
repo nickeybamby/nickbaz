@@ -129,10 +129,10 @@ export function Contact() {
             Get In Touch
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to bring your project to life? I'm here to help you succeed with 
+            Ready to bring your project to life? I&apos;m here to help you succeed with 
             expert project management and frontend development services.
           </p>
         </div>

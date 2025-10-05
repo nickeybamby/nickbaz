@@ -17,11 +17,11 @@ export function Hero() {
                 Technical Project Manager
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-                Hi, I'm <span className="text-primary">Nicholas</span>
+                Hi, I&apos;m <span className="text-primary">Nicholas</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
                 I specialize in delivering complex technical projects while
-                building beautiful, user-centered frontend experiences. Let's
+                building beautiful, user-centered frontend experiences. Let&apos;s
                 create something amazing together.
               </p>
             </div>

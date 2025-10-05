@@ -389,7 +389,7 @@ export default function ProjectManagement() {
               Ready to Transform Your Project Delivery?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Let's discuss how I can help your team deliver exceptional results
+              Let&apos;s discuss how I can help your team deliver exceptional results
               with proven project management expertise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

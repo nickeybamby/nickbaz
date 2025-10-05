@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
     // - Netlify Forms
     // - Vercel's built-in email functionality
 
-    // For now, we'll just return a success response
+  // For now, we&apos;ll just return a success response
     return NextResponse.json(
       { 
         message: 'Message received successfully!',
