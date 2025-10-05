@@ -273,8 +273,8 @@ export default function ProjectManagement() {
                 Success Stories
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Real results from projects I&apos;ve led across different industries
-                and team sizes.
+                Real results from projects I&apos;ve led across different
+                industries and team sizes.
               </p>
             </div>
 

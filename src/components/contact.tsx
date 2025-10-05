@@ -304,8 +304,8 @@ export function Contact() {
                 {submitStatus === "success" && (
                   <div className="p-4 bg-green-50 border border-green-200 rounded-md">
                     <p className="text-green-800 text-sm">
-                      ✅ Message sent successfully! I&apos;ll get back to you within
-                      24 hours.
+                      ✅ Message sent successfully! I&apos;ll get back to you
+                      within 24 hours.
                     </p>
                   </div>
                 )}
