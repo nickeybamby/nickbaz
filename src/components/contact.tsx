@@ -156,7 +156,7 @@ export function Contact() {
             <CardHeader>
               <CardTitle>Start a Project</CardTitle>
               <CardDescription>
-                Fill out the form below and I'll get back to you within 24
+                Fill out the form below and I&apos;ll get back to you within 24
                 hours.
               </CardDescription>
             </CardHeader>
@@ -304,7 +304,7 @@ export function Contact() {
                 {submitStatus === "success" && (
                   <div className="p-4 bg-green-50 border border-green-200 rounded-md">
                     <p className="text-green-800 text-sm">
-                      ✅ Message sent successfully! I'll get back to you within
+                      ✅ Message sent successfully! I&apos;ll get back to you within
                       24 hours.
                     </p>
                   </div>

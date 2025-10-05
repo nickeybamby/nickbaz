@@ -184,7 +184,7 @@ export default function ProjectManagement() {
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 I leverage industry-standard frameworks and adapt them to your
-                team's unique needs and culture.
+                team&apos;s unique needs and culture.
               </p>
             </div>
 
@@ -273,7 +273,7 @@ export default function ProjectManagement() {
                 Success Stories
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Real results from projects I've led across different industries
+                Real results from projects I&apos;ve led across different industries
                 and team sizes.
               </p>
             </div>
