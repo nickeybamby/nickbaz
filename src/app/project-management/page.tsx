@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Image from 'next/image';
 
 const methodologies = [
   {
@@ -185,9 +186,11 @@ export default function ProjectManagement() {
               {caseStudies.map((study) => (
                 <Card key={study.title} className="overflow-hidden hover:shadow-lg transition-shadow">
                   <div className="relative">
-                    <img
+                    <Image
                       src={study.image}
                       alt={study.title}
+                      width={500}
+                      height={300}
                       className="w-full h-48 object-cover"
                     />
                   </div>

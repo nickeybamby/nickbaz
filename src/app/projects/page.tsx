@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Image from 'next/image';
 
 const projects = [
   {
@@ -128,9 +129,11 @@ export default function Projects() {
               {projects.map((project) => (
                 <Card key={project.id} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
                   <div className="relative overflow-hidden">
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
+                      width={500}
+                      height={300}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 left-4">

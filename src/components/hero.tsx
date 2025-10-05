@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -53,10 +54,12 @@ export function Hero() {
 
           {/* Right Column - Image */}
           <div className="relative">
-            <div className="relative z-10">
-              <img
+              <div className="relative z-10">
+              <Image
                 src="https://res.cloudinary.com/dt7fmvznd/image/upload/v1759535782/ChatGPT_Image_Oct_4_2025_12_46_15_AM_hdhxx1.jpg"
                 alt="Nicholas - Technical Project Manager"
+                width={1200}
+                height={600}
                 className="w-full h-[600px] object-cover rounded-2xl shadow-2xl"
               />
               {/* Floating elements */}

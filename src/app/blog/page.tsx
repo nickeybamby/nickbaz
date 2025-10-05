@@ -163,9 +163,11 @@ export default function Blog() {
               {blogPosts.slice(1).map((post) => (
                 <Card key={post.id} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
                   <div className="relative overflow-hidden">
-                    <img
+                    <Image
                       src={post.image}
                       alt={post.title}
+                      width={500}
+                      height={300}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 left-4">
