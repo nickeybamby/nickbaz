@@ -2,14 +2,20 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 // EmailJS configuration
-const EMAILJS_SERVICE_ID = 'service_89vou9c'; // Replace with your EmailJS service ID
-const EMAILJS_TEMPLATE_ID = 'template_orsvu39'; // Replace with your EmailJS template ID
-const EMAILJS_PUBLIC_KEY = 'yntKD5Kubo_b4q4gU'; // Replace with your EmailJS public key
+const EMAILJS_SERVICE_ID = "service_89vou9c"; // Replace with your EmailJS service ID
+const EMAILJS_TEMPLATE_ID = "template_orsvu39"; // Replace with your EmailJS template ID
+const EMAILJS_PUBLIC_KEY = "yntKD5Kubo_b4q4gU"; // Replace with your EmailJS public key
 
 const contactMethods = [
   {
@@ -17,36 +23,36 @@ const contactMethods = [
     description: "Get in touch for project inquiries",
     value: "nicholasobazei@gmail.com",
     icon: "📧",
-    link: "mailto:nicholasobazei@gmail.com"
+    link: "mailto:nicholasobazei@gmail.com",
   },
   {
     title: "LinkedIn",
     description: "Connect professionally",
     value: "linkedin.com/in/nickeybamby",
     icon: "💼",
-    link: "https://linkedin.com/in/nickeybamby"
+    link: "https://linkedin.com/in/nickeybamby",
   },
   {
     title: "GitHub",
     description: "Check out my code",
     value: "github.com/nickeybamby",
     icon: "🐙",
-    link: "https://github.com/nickeybamby"
+    link: "https://github.com/nickeybamby",
   },
   {
     title: "X",
     description: "Follow for updates",
     value: "@nickeybamby",
     icon: "🐦",
-    link: "https://x.com/nickeybamby"
-  }
+    link: "https://x.com/nickeybamby",
+  },
 ];
 
 const availability = {
   status: "Available for new projects",
   responseTime: "Within 24 hours",
   location: "Remote / Global",
-  timezone: "GMT+1"
+  timezone: "GMT+1",
 };
 
 export function Contact() {
@@ -57,15 +63,17 @@ export function Contact() {
     projectType: "",
     budget: "",
     timeline: "",
-    message: ""
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus('idle');
+    setSubmitStatus("idle");
 
     try {
       // Initialize EmailJS with your public key
@@ -75,12 +83,12 @@ export function Contact() {
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
-        company: formData.company || 'Not specified',
-        project_type: formData.projectType || 'Not specified',
-        budget: formData.budget || 'Not specified',
-        timeline: formData.timeline || 'Not specified',
+        company: formData.company || "Not specified",
+        project_type: formData.projectType || "Not specified",
+        budget: formData.budget || "Not specified",
+        timeline: formData.timeline || "Not specified",
         message: formData.message,
-        to_email: 'nicholasobazei@gmail.com', // Your email address
+        to_email: "nicholasobazei@gmail.com", // Your email address
       };
 
       // Send email using EmailJS
@@ -91,8 +99,8 @@ export function Contact() {
       );
 
       if (response.status === 200) {
-        setSubmitStatus('success');
-        
+        setSubmitStatus("success");
+
         // Reset form
         setFormData({
           name: "",
@@ -101,23 +109,27 @@ export function Contact() {
           projectType: "",
           budget: "",
           timeline: "",
-          message: ""
+          message: "",
         });
       } else {
-        throw new Error('Failed to send message');
+        throw new Error("Failed to send message");
       }
     } catch (error) {
-      console.error('Error sending message:', error);
-      setSubmitStatus('error');
+      console.error("Error sending message:", error);
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -129,11 +141,12 @@ export function Contact() {
             Get In Touch
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to bring your project to life? I'm here to help you succeed with 
-            expert project management and frontend development services.
+            Ready to bring your project to life? I&apos;m here to help you
+            succeed with expert project management and frontend development
+            services.
           </p>
         </div>
 
@@ -143,7 +156,8 @@ export function Contact() {
             <CardHeader>
               <CardTitle>Start a Project</CardTitle>
               <CardDescription>
-                Fill out the form below and I'll get back to you within 24 hours.
+                Fill out the form below and I&apos;ll get back to you within 24
+                hours.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -194,7 +208,10 @@ export function Contact() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="projectType" className="text-sm font-medium">
+                    <label
+                      htmlFor="projectType"
+                      className="text-sm font-medium"
+                    >
                       Project Type
                     </label>
                     <select
@@ -206,8 +223,12 @@ export function Contact() {
                     >
                       <option value="">Select project type</option>
                       <option value="frontend">Frontend Development</option>
-                      <option value="project-management">Project Management</option>
-                      <option value="full-service">Full Service (PM + Frontend)</option>
+                      <option value="project-management">
+                        Project Management
+                      </option>
+                      <option value="full-service">
+                        Full Service (PM + Frontend)
+                      </option>
                       <option value="consulting">Consulting</option>
                       <option value="other">Other</option>
                     </select>
@@ -271,30 +292,33 @@ export function Contact() {
                   />
                 </div>
 
-                 <Button 
-                   type="submit" 
-                   className="w-full" 
-                   size="lg"
-                   disabled={isSubmitting}
-                 >
-                   {isSubmitting ? "Sending..." : "Send Message"}
-                 </Button>
-                 
-                 {submitStatus === 'success' && (
-                   <div className="p-4 bg-green-50 border border-green-200 rounded-md">
-                     <p className="text-green-800 text-sm">
-                       ✅ Message sent successfully! I'll get back to you within 24 hours.
-                     </p>
-                   </div>
-                 )}
-                 
-                 {submitStatus === 'error' && (
-                   <div className="p-4 bg-red-50 border border-red-200 rounded-md">
-                     <p className="text-red-800 text-sm">
-                       ❌ Sorry, there was an error sending your message. Please try again or contact me directly at nicholasobazei@gmail.com
-                     </p>
-                   </div>
-                 )}
+                <Button
+                  type="submit"
+                  className="w-full"
+                  size="lg"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </Button>
+
+                {submitStatus === "success" && (
+                  <div className="p-4 bg-green-50 border border-green-200 rounded-md">
+                    <p className="text-green-800 text-sm">
+                      ✅ Message sent successfully! I&apos;ll get back to you
+                      within 24 hours.
+                    </p>
+                  </div>
+                )}
+
+                {submitStatus === "error" && (
+                  <div className="p-4 bg-red-50 border border-red-200 rounded-md">
+                    <p className="text-red-800 text-sm">
+                      ❌ Sorry, there was an error sending your message. Please
+                      try again or contact me directly at
+                      nicholasobazei@gmail.com
+                    </p>
+                  </div>
+                )}
               </form>
             </CardContent>
           </Card>
@@ -311,7 +335,9 @@ export function Contact() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-green-600">{availability.status}</h4>
+                  <h4 className="font-semibold text-green-600">
+                    {availability.status}
+                  </h4>
                   <p className="text-sm text-muted-foreground">
                     Response time: {availability.responseTime}
                   </p>
@@ -319,11 +345,15 @@ export function Contact() {
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <span className="font-medium">Location:</span>
-                    <p className="text-muted-foreground">{availability.location}</p>
+                    <p className="text-muted-foreground">
+                      {availability.location}
+                    </p>
                   </div>
                   <div>
                     <span className="font-medium">Timezone:</span>
-                    <p className="text-muted-foreground">{availability.timezone}</p>
+                    <p className="text-muted-foreground">
+                      {availability.timezone}
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -334,17 +364,26 @@ export function Contact() {
               <h3 className="text-xl font-semibold">Connect With Me</h3>
               <div className="grid gap-4">
                 {contactMethods.map((method) => (
-                  <Card key={method.title} className="hover:shadow-md transition-shadow">
+                  <Card
+                    key={method.title}
+                    className="hover:shadow-md transition-shadow"
+                  >
                     <CardContent className="p-4">
                       <div className="flex items-center gap-4">
                         <span className="text-2xl">{method.icon}</span>
                         <div className="flex-1">
                           <h4 className="font-semibold">{method.title}</h4>
-                          <p className="text-sm text-muted-foreground">{method.description}</p>
+                          <p className="text-sm text-muted-foreground">
+                            {method.description}
+                          </p>
                           <p className="text-sm font-medium">{method.value}</p>
                         </div>
                         <Button asChild variant="ghost" size="sm">
-                          <a href={method.link} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={method.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             Contact
                           </a>
                         </Button>

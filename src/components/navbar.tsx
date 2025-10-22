@@ -3,7 +3,14 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +24,9 @@ export function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex items-center space-x-2">
               <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">NB</span>
+                <span className="text-primary-foreground font-bold text-sm">
+                  NB
+                </span>
               </div>
               <span className="font-bold text-xl">nickobaz</span>
             </div>
@@ -29,14 +38,17 @@ export function Navbar() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                      Home
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink
+                    asChild
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                  >
+                    <Link href="/">Home</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Project Management</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>
+                    Project Management
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                       <div className="row-span-3">
@@ -49,7 +61,8 @@ export function Navbar() {
                               Project Management
                             </div>
                             <p className="text-sm leading-tight text-muted-foreground">
-                              Strategic project leadership and delivery expertise
+                              Strategic project leadership and delivery
+                              expertise
                             </p>
                           </Link>
                         </NavigationMenuLink>
@@ -58,8 +71,15 @@ export function Navbar() {
                         <Link
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           href="/project-management/agile"
+<<<<<<< HEAD
                           legacyBehavior>
                           <div className="text-sm font-medium leading-none">Agile Methodologies</div>
+=======
+                        >
+                          <div className="text-sm font-medium leading-none">
+                            Agile Methodologies
+                          </div>
+>>>>>>> 3922961bc52b19c23a246e38d63c353e262178ef
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                             Scrum, Kanban, and Lean practices
                           </p>
@@ -67,8 +87,15 @@ export function Navbar() {
                         <Link
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           href="/project-management/leadership"
+<<<<<<< HEAD
                           legacyBehavior>
                           <div className="text-sm font-medium leading-none">Team Leadership</div>
+=======
+                        >
+                          <div className="text-sm font-medium leading-none">
+                            Team Leadership
+                          </div>
+>>>>>>> 3922961bc52b19c23a246e38d63c353e262178ef
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                             Cross-functional team management
                           </p>
@@ -78,7 +105,9 @@ export function Navbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Frontend Development</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>
+                    Frontend Development
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                       <div className="row-span-3">
@@ -100,8 +129,15 @@ export function Navbar() {
                         <Link
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           href="/frontend-development/react"
+<<<<<<< HEAD
                           legacyBehavior>
                           <div className="text-sm font-medium leading-none">React & Next.js</div>
+=======
+                        >
+                          <div className="text-sm font-medium leading-none">
+                            React & Next.js
+                          </div>
+>>>>>>> 3922961bc52b19c23a246e38d63c353e262178ef
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                             Modern React development with Next.js
                           </p>
@@ -109,8 +145,15 @@ export function Navbar() {
                         <Link
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           href="/frontend-development/ui"
+<<<<<<< HEAD
                           legacyBehavior>
                           <div className="text-sm font-medium leading-none">UI/UX Design</div>
+=======
+                        >
+                          <div className="text-sm font-medium leading-none">
+                            UI/UX Design
+                          </div>
+>>>>>>> 3922961bc52b19c23a246e38d63c353e262178ef
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                             Beautiful and intuitive user interfaces
                           </p>
@@ -120,18 +163,20 @@ export function Navbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/blog" legacyBehavior passHref>
-                    <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                      Blog
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink
+                    asChild
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                  >
+                    <Link href="/blog">Blog</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/about" legacyBehavior passHref>
-                    <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
-                      About
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink
+                    asChild
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events:none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                  >
+                    <Link href="/about">About</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -140,7 +185,7 @@ export function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:flex">
             <Button asChild>
-              <Link href="/contact">Let's Talk</Link>
+              <Link href="/contact">Let&apos;s Talk</Link>
             </Button>
           </div>
 
@@ -158,9 +203,19 @@ export function Navbar() {
                 stroke="currentColor"
               >
                 {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </Button>
@@ -171,27 +226,45 @@ export function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t">
-              <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent">
+              <Link
+                href="/"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent"
+              >
                 Home
               </Link>
-              <Link href="/project-management" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent">
+              <Link
+                href="/project-management"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent"
+              >
                 Project Management
               </Link>
-              <Link href="/frontend-development" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent">
+              <Link
+                href="/frontend-development"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent"
+              >
                 Frontend Development
               </Link>
-              <Link href="/blog" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent">
+              <Link
+                href="/blog"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent"
+              >
                 Blog
               </Link>
-              <Link href="/about" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent">
+              <Link
+                href="/about"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent"
+              >
                 About
               </Link>
-              <Link href="/contact" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent">
+              <Link
+                href="/contact"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-accent"
+              >
                 Contact
               </Link>
               <div className="px-3 py-2">
                 <Button asChild className="w-full">
-                  <Link href="/contact">Let's Talk</Link>
+                  <Link href="/contact">Let&apos;s Talk</Link>
                 </Button>
               </div>
             </div>
