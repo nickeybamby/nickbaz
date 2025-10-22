@@ -14,12 +14,14 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2">
               <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm">NB</span>
               </div>
               <span className="font-bold text-xl">nickobaz</span>
-            </Link>
+            </div>
+          </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -42,7 +44,7 @@ export function Navbar() {
                           <Link
                             className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                             href="/project-management"
-                          >
+                            legacyBehavior>
                             <div className="mb-2 mt-4 text-lg font-medium">
                               Project Management
                             </div>
@@ -56,7 +58,7 @@ export function Navbar() {
                         <Link
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           href="/project-management/agile"
-                        >
+                          legacyBehavior>
                           <div className="text-sm font-medium leading-none">Agile Methodologies</div>
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                             Scrum, Kanban, and Lean practices
@@ -65,7 +67,7 @@ export function Navbar() {
                         <Link
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           href="/project-management/leadership"
-                        >
+                          legacyBehavior>
                           <div className="text-sm font-medium leading-none">Team Leadership</div>
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                             Cross-functional team management
@@ -84,7 +86,7 @@ export function Navbar() {
                           <Link
                             className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                             href="/frontend-development"
-                          >
+                            legacyBehavior>
                             <div className="mb-2 mt-4 text-lg font-medium">
                               Frontend Development
                             </div>
@@ -98,7 +100,7 @@ export function Navbar() {
                         <Link
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           href="/frontend-development/react"
-                        >
+                          legacyBehavior>
                           <div className="text-sm font-medium leading-none">React & Next.js</div>
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                             Modern React development with Next.js
@@ -107,7 +109,7 @@ export function Navbar() {
                         <Link
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           href="/frontend-development/ui"
-                        >
+                          legacyBehavior>
                           <div className="text-sm font-medium leading-none">UI/UX Design</div>
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                             Beautiful and intuitive user interfaces

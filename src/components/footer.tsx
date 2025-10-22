@@ -96,10 +96,10 @@ export function Footer() {
             <ul className="space-y-2">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <Link 
-                    href={link.href} 
+                  <Link
+                    href={link.href}
                     className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
+                    legacyBehavior>
                     {link.name}
                   </Link>
                 </li>
@@ -113,10 +113,10 @@ export function Footer() {
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <Link 
-                    href={link.href} 
+                  <Link
+                    href={link.href}
                     className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
+                    legacyBehavior>
                     {link.name}
                   </Link>
                 </li>
@@ -130,10 +130,10 @@ export function Footer() {
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
-                  <Link 
-                    href={link.href} 
+                  <Link
+                    href={link.href}
                     className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
+                    legacyBehavior>
                     {link.name}
                   </Link>
                 </li>

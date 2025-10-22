@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico", 
   },
+  
   keywords: [
     "Nicholas Obazei",
     "Technical Project Manager",

@@ -111,12 +111,24 @@ export function Projects() {
                   ))}
                 </div>
                 <Button asChild variant="ghost" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <Link href={project.link}>
+                <Link href={project.link}>
+                  <a className="flex items-center group">
                     View Project Details
-                    <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg
+                      className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
-                  </Link>
+                  </a>
+                </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -125,7 +137,7 @@ export function Projects() {
 
         <div className="text-center">
           <Button asChild size="lg" variant="outline">
-            <Link href="/projects">
+            <Link href="/projects" legacyBehavior>
               View All Projects
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
