@@ -21,7 +21,7 @@ export default function About() {
               </h1>
                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                  I&apos;m Nicholas Obazei, a passionate technical project manager and frontend developer 
-                 with over 4 years of experience delivering exceptional digital experiences.
+                 with over 3 years of experience delivering exceptional digital experiences.
                </p>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function About() {
               </div>
               <div className="relative">
                 <Image
-                  src="https://res.cloudinary.com/dt7fmvznd/image/upload/v1759535782/ChatGPT_Image_Oct_4_2025_12_46_15_AM_hdhxx1.jpg"
+                  src="https://res.cloudinary.com/dt7fmvznd/image/upload/v1761191889/ChatGPT_Image_Oct_4_2025_12_46_15_AM_hdhxx1.jpg"
                   alt="Nicholas Obazei working"
                   width={500}
                   height={600}

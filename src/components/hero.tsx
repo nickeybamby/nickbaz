@@ -43,13 +43,13 @@ export function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">50+</div>
+                <div className="text-3xl font-bold text-primary">10+</div>
                 <div className="text-sm text-muted-foreground">
                   Projects Delivered
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">4+</div>
+                <div className="text-3xl font-bold text-primary">3+</div>
                 <div className="text-sm text-muted-foreground">
                   Years Experience
                 </div>
@@ -67,7 +67,7 @@ export function Hero() {
           <div className="relative">
             <div className="relative z-10">
               <Image
-                src="https://res.cloudinary.com/dt7fmvznd/image/upload/v1759535782/ChatGPT_Image_Oct_4_2025_12_46_15_AM_hdhxx1.jpg"
+                src="https://res.cloudinary.com/dt7fmvznd/image/upload/v1761191889/ChatGPT_Image_Oct_4_2025_12_46_15_AM_hdhxx1.jpg"
                 alt="Nicholas - Technical Project Manager"
                 width={1200}
                 height={600}

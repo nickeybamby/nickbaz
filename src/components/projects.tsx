@@ -15,14 +15,14 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: 1,
-    title: "Agile Transformation Initiative",
+    title: "NovaLaunch",
     description:
       "Successfully transformed a traditional waterfall development team to Agile methodology, improving delivery time by 60% and team satisfaction.",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
-    tags: ["Agile", "Scrum", "Team Leadership", "Process Improvement"],
+    tags: ["Agile", "Team Leadership", "Process Improvement"],
     category: "Project Management",
-    link: "/projects/agile-transformation",
+    link: "/projects/novalaunch",
   },
   {
     id: 2,
@@ -56,39 +56,39 @@ const projects = [
     category: "Project Management",
     link: "/projects/digital-transformation",
   },
-  {
-    id: 4,
-    title: "Healthcare Dashboard Application",
-    description:
-      "Built a comprehensive healthcare dashboard for patient management with real-time data visualization and analytics capabilities.",
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=300&fit=crop",
-    tags: ["React", "D3.js", "Healthcare", "Data Visualization"],
-    category: "Frontend Development",
-    link: "/projects/healthcare-dashboard",
-  },
-  {
-    id: 5,
-    title: "E-Commerce Platform Redesign",
-    description:
-      "Led a complete redesign of a high-traffic e-commerce platform, resulting in 40% increase in conversion rates and improved user experience.",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-    tags: ["React", "Next.js", "TypeScript", "Project Management"],
-    category: "Frontend Development",
-    link: "/projects/ecommerce-redesign",
-  },
-  {
-    id: 6,
-    title: "Design System Implementation",
-    description:
-      "Created and implemented a comprehensive design system that reduced development time by 50% and improved consistency across products.",
-    image:
-      "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=500&h=300&fit=crop",
-    tags: ["Design Systems", "Figma", "Storybook", "Component Library"],
-    category: "Frontend Development",
-    link: "/projects/design-system",
-  },
+  // {
+  //   id: 4,
+  //   title: "Healthcare Dashboard Application",
+  //   description:
+  //     "Built a comprehensive healthcare dashboard for patient management with real-time data visualization and analytics capabilities.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=300&fit=crop",
+  //   tags: ["React", "D3.js", "Healthcare", "Data Visualization"],
+  //   category: "Frontend Development",
+  //   link: "/projects/healthcare-dashboard",
+  // },
+  // {
+  //   id: 5,
+  //   title: "E-Commerce Platform Redesign",
+  //   description:
+  //     "Led a complete redesign of a high-traffic e-commerce platform, resulting in 40% increase in conversion rates and improved user experience.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+  //   tags: ["React", "Next.js", "TypeScript", "Project Management"],
+  //   category: "Frontend Development",
+  //   link: "/projects/ecommerce-redesign",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Design System Implementation",
+  //   description:
+  //     "Created and implemented a comprehensive design system that reduced development time by 50% and improved consistency across products.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=500&h=300&fit=crop",
+  //   tags: ["Design Systems", "Figma", "Storybook", "Component Library"],
+  //   category: "Frontend Development",
+  //   link: "/projects/design-system",
+  // },
 ];
 
 export function Projects() {
