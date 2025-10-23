@@ -145,18 +145,12 @@ export function Projects() {
                     </Badge>
                   ))}
                 </div>
-<<<<<<< HEAD
-                <Button asChild variant="ghost" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                <Link href={project.link}>
-                  <a className="flex items-center group">
-=======
                 <Button
                   asChild
                   variant="ghost"
                   className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
                 >
                   <Link href={project.link}>
->>>>>>> 3922961bc52b19c23a246e38d63c353e262178ef
                     View Project Details
                     <svg
                       className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"
@@ -171,8 +165,7 @@ export function Projects() {
                         d="M9 5l7 7-7 7"
                       />
                     </svg>
-                  </a>
-                </Link>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -181,7 +174,7 @@ export function Projects() {
 
         <div className="text-center">
           <Button asChild size="lg" variant="outline">
-            <Link href="/projects" legacyBehavior>
+            <Link href="/projects">
               View All Projects
               <svg
                 className="ml-2 w-4 h-4"
