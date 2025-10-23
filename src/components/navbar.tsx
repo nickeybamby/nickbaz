@@ -21,16 +21,16 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">
-                  NB
-                </span>
+            <Link href="/" className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2">
+                <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-primary-foreground font-bold text-sm">
+                    NB
+                  </span>
+                </div>
+                <span className="font-bold text-xl">nickobaz</span>
               </div>
-              <span className="font-bold text-xl">nickobaz</span>
-            </div>
-          </Link>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -55,7 +55,8 @@ export function Navbar() {
                         <NavigationMenuLink asChild>
                           <Link
                             className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                            href="/project-management">
+                            href="/project-management"
+                          >
                             <div className="mb-2 mt-4 text-lg font-medium">
                               Project Management
                             </div>
@@ -104,7 +105,7 @@ export function Navbar() {
                           <Link
                             className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                             href="/frontend-development"
-                            >
+                          >
                             <div className="mb-2 mt-4 text-lg font-medium">
                               Frontend Development
                             </div>
