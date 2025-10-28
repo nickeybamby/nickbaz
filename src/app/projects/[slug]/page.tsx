@@ -9,7 +9,13 @@ import { Button } from "@/components/ui/button";
 type ParamsObj = { slug: string };
 type Params = ParamsObj | Promise<ParamsObj>;
 
-export default async function ProjectPage({ params }: { params: Params }) {
+// `params` may be a promise in the App Router runtime. We intentionally keep
+// a small any usage here because Next's build-time type checks require
+// `params` to be compatible with Promise<any>. Disabling the rule for this
+// line avoids noisy lint failures while preserving a type-safe `slug` after
+// awaiting.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function ProjectPage({ params }: { params: any }) {
   const { slug } = (await params) as ParamsObj;
   const project = findProjectBySlug(slug);
   if (!project) return notFound();

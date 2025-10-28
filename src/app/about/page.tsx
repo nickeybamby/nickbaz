@@ -268,12 +268,12 @@ export default function About() {
               your vision to life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-3 bg-background text-foreground rounded-lg font-medium hover:bg-background/90 transition-colors"
               >
                 Start a Project
-              </a>
+              </Link>
               <Link
                 href="/projects"
                 className="inline-flex items-center justify-center px-8 py-3 border border-primary-foreground text-primary-foreground rounded-lg font-medium hover:bg-primary-foreground hover:text-primary transition-colors"
