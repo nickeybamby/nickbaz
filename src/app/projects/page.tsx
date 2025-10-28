@@ -125,7 +125,7 @@ export default function Projects() {
                           Key Results:
                         </h4>
                         <div className="grid grid-cols-2 gap-2">
-                          {project.metrics.map((metric) => (
+                          {(project.metrics || []).map((metric) => (
                             <Badge
                               key={metric}
                               variant="secondary"

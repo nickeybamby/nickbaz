@@ -38,14 +38,14 @@ const contactMethods = [
     value: "github.com/nickeybamby",
     icon: "🐙",
     link: "https://github.com/nickeybamby",
-  },
-  {
-    title: "X",
-    description: "Follow for updates",
-    value: "@nickeybamby",
-    icon: "🐦",
-    link: "https://x.com/nickeybamby",
-  },
+  }
+  // {
+  //   title: "X",
+  //   description: "Follow for updates",
+  //   value: "@nickeybamby",
+  //   icon: "🐦",
+  //   link: "https://x.com/nickeybamby",
+  // },
 ];
 
 const availability = {

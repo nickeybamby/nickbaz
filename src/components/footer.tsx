@@ -6,21 +6,21 @@ import { Button } from "@/components/ui/button";
 const footerLinks = {
   services: [
     { name: "Project Management", href: "/project-management" },
-    { name: "Frontend Development", href: "/frontend-development" },
-    { name: "Consulting", href: "/consulting" },
-    { name: "Team Training", href: "/training" }
+    { name: "Frontend Development", href: "/frontend-development" }
+    // { name: "Consulting", href: "/consulting" },
+    // { name: "Team Training", href: "/training" }
   ],
   company: [
     { name: "About", href: "/about" },
     { name: "Blog", href: "/blog" },
-    { name: "Case Studies", href: "/case-studies" },
-    { name: "Testimonials", href: "/testimonials" }
+    { name: "Case Studies", href: "/case-studies" }
+    // { name: "Testimonials", href: "/testimonials" }
   ],
   resources: [
     { name: "Portfolio", href: "/projects" },
-    { name: "Resume", href: "/resume" },
-    { name: "Contact", href: "/contact" },
-    { name: "Privacy Policy", href: "/privacy" }
+    // { name: "Resume", href: "/resume" },
+    { name: "Contact", href: "/contact" }
+    // { name: "Privacy Policy", href: "/privacy" }
   ]
 };
 
@@ -43,15 +43,15 @@ const socialLinks = [
       </svg>
     )
   },
-  {
-    name: "X (Twitter)",
-    href: "https://x.com/nickeybamby",
-    icon: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-      </svg>
-    )
-  },
+  // {
+  //   name: "X (Twitter)",
+  //   href: "https://x.com/nickeybamby",
+  //   icon: (
+  //     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  //       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  //     </svg>
+  //   )
+  // },
   {
     name: "Email",
     href: "mailto:nicholasobazei@gmail.com",
@@ -166,7 +166,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Nick Baz. All rights reserved.
+            © {new Date().getFullYear()} Nicholas Obazei. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

@@ -302,7 +302,7 @@ export default function ProjectManagement() {
                   <CardContent>
                     <h4 className="font-semibold mb-3">Key Results:</h4>
                     <div className="grid grid-cols-2 gap-2">
-                      {study.metrics.map((metric) => (
+                      {(study.metrics || []).map((metric) => (
                         <Badge
                           key={metric}
                           variant="secondary"

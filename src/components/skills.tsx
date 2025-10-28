@@ -29,11 +29,11 @@ const skillCategories = [
     title: "Tools & Technologies",
     icon: "🛠️",
     skills: [
-      { name: "Git & GitHub", level: 94 },
-      { name: "Jira & Confluence", level: 91 },
-      { name: "Figma", level: 88 },
-      { name: "VS Code", level: 96 },
-      { name: "CI/CD", level: 85 },
+      { name: "ClickUp", level: 94 },
+      { name: "Jira", level: 91 },
+      { name: "VS Code", level: 90 },
+      { name: "Notion", level: 96 },
+      { name: "Primavera P6", level: 85 },
     ]
   },
   {

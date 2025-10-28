@@ -365,7 +365,7 @@ export default function FrontendDevelopment() {
                     </div>
                     <h4 className="font-semibold mb-3">Key Results:</h4>
                     <div className="grid grid-cols-2 gap-2 mb-4">
-                      {project.metrics.map((metric) => (
+                      {(project.metrics || []).map((metric) => (
                         <Badge
                           key={metric}
                           variant="secondary"
