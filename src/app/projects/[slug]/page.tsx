@@ -37,11 +37,48 @@ export default async function ProjectPage({ params }: Props) {
                     ))}
                   </div>
                 </div>
+                {/* Gallery: 2 per row with captions */}
+                {project.gallery && project.gallery.length > 0 && (
+                  <div className="mt-8">
+                    <h3 className="font-semibold mb-4">Project Gallery</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      {project.gallery.map((g, idx) => (
+                        <figure
+                          key={idx}
+                          className="rounded overflow-hidden bg-background/30 p-2"
+                        >
+                          <div className="rounded overflow-hidden shadow">
+                            <Image
+                              src={g.src}
+                              alt={`${project.title} - image ${idx + 1}`}
+                              width={800}
+                              height={500}
+                              className="w-full h-48 object-cover"
+                            />
+                          </div>
+                          <figcaption className="mt-2 text-sm text-muted-foreground">
+                            <article>
+                              <p>{g.caption}</p>
+                            </article>
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <div className="flex gap-4">
                   <Button asChild>
                     <a href="/contact">Get in touch</a>
                   </Button>
                   <Button variant="outline">Download Case Study</Button>
+                  {/* Download CV - place your PDF in /public with this exact filename to enable download */}
+                  <Button asChild>
+                    <a href="/Nicholas_Obazei_pso.pdf" download className="inline-flex items-center">
+                      Download CV
+                    </a>
+                  </Button>
+                  
+                  {/* If the PDF isn't in public/, copy the provided file to public/Nicholas_Obazei_pso.pdf */}
                 </div>
               </div>
               <div className="md:col-span-1">
