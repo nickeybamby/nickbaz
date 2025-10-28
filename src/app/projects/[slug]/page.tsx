@@ -7,11 +7,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 type Props = {
-  params: { slug: string };
+  params: { slug: string } | any;
 };
 
-export default function ProjectPage({ params }: Props) {
-  const { slug } = params;
+export default async function ProjectPage({ params }: Props) {
+  const { slug } = await params;
   const project = findProjectBySlug(slug);
   if (!project) return notFound();
 
