@@ -1,7 +1,12 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Image from "next/image";
 
 export default function About() {
@@ -19,10 +24,11 @@ export default function About() {
               <h1 className="text-4xl lg:text-6xl font-bold mb-6">
                 Nice to meet you!
               </h1>
-               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                 I&apos;m Nicholas Obazei, a passionate technical project manager and frontend developer 
-                 with over 3 years of experience delivering exceptional digital experiences.
-               </p>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                I&apos;m Nicholas Obazei, a passionate technical project manager
+                and frontend developer with over 3 years of experience
+                delivering exceptional digital experiences.
+              </p>
             </div>
           </div>
         </section>
@@ -35,13 +41,28 @@ export default function About() {
                 <h2 className="text-3xl lg:text-4xl font-bold">My Story</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                  My journey began in civil engineering, where I learned how to design and manage complex systems with precision and structure. Along the way, I discovered my passion for technology and how digital solutions could solve real-world problems. This led me into frontend development, where I built responsive, user-centered applications, and later into project management, where I now guide entire teams through the end-to-end delivery of products and platforms.
+                    My journey began in civil engineering, where I learned how
+                    to design and manage complex systems with precision and
+                    structure. Along the way, I discovered my passion for
+                    technology and how digital solutions could solve real-world
+                    problems. This led me into frontend development, where I
+                    built responsive, user-centered applications, and later into
+                    project management, where I now guide entire teams through
+                    the end-to-end delivery of products and platforms.
                   </p>
                   <p>
-                  Across every role, I’ve focused on the same core principles: clear communication, user-centered design, and delivering value that truly matters.
+                    Across every role, I’ve focused on the same core principles:
+                    clear communication, user-centered design, and delivering
+                    value that truly matters.
                   </p>
                   <p>
-                  What sets me apart is my ability to bridge the gap between technical teams and business stakeholders. With a foundation in engineering, hands-on experience in software development, and a career in project management, I speak both languages fluently. This allows me to translate complex technical concepts into business value — and business priorities into actionable technical outcomes.
+                    What sets me apart is my ability to bridge the gap between
+                    technical teams and business stakeholders. With a foundation
+                    in engineering, hands-on experience in software development,
+                    and a career in project management, I speak both languages
+                    fluently. This allows me to translate complex technical
+                    concepts into business value — and business priorities into
+                    actionable technical outcomes.
                   </p>
                 </div>
               </div>
@@ -64,73 +85,78 @@ export default function About() {
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">My Values</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                The principles that guide my work and shape how I approach every project.
+                The principles that guide my work and shape how I approach every
+                project.
               </p>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Card>
                 <CardHeader>
                   <div className="text-4xl mb-2">🎯</div>
                   <CardTitle>User-Centered</CardTitle>
                   <CardDescription>
-                    Every decision is made with the end user in mind. I believe great products 
-                    solve real problems for real people.
+                    Every decision is made with the end user in mind. I believe
+                    great products solve real problems for real people.
                   </CardDescription>
                 </CardHeader>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <div className="text-4xl mb-2">🚀</div>
                   <CardTitle>Results-Driven</CardTitle>
                   <CardDescription>
-                    I focus on delivering measurable outcomes that drive business value. 
-                    Success is measured by impact, not just activity.
+                    I focus on delivering measurable outcomes that drive
+                    business value. Success is measured by impact, not just
+                    activity.
                   </CardDescription>
                 </CardHeader>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <div className="text-4xl mb-2">🤝</div>
                   <CardTitle>Collaborative</CardTitle>
                   <CardDescription>
-                    The best solutions come from diverse perspectives. I believe in fostering 
-                    an environment where everyone&apos;s voice is heard and valued.
+                    The best solutions come from diverse perspectives. I believe
+                    in fostering an environment where everyone&apos;s voice is
+                    heard and valued.
                   </CardDescription>
                 </CardHeader>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <div className="text-4xl mb-2">📈</div>
                   <CardTitle>Continuous Learning</CardTitle>
                   <CardDescription>
-                    Technology evolves rapidly, and so do I. I&apos;m committed to staying current 
-                    with the latest tools, methodologies, and best practices.
+                    Technology evolves rapidly, and so do I. I&apos;m committed
+                    to staying current with the latest tools, methodologies, and
+                    best practices.
                   </CardDescription>
                 </CardHeader>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <div className="text-4xl mb-2">⚡</div>
                   <CardTitle>Efficient</CardTitle>
                   <CardDescription>
-                    I believe in working smarter, not harder. Process optimization and 
-                    automation are key to sustainable success.
+                    I believe in working smarter, not harder. Process
+                    optimization and automation are key to sustainable success.
                   </CardDescription>
                 </CardHeader>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <div className="text-4xl mb-2">🎨</div>
                   <CardTitle>Quality-Focused</CardTitle>
                   <CardDescription>
-                    Good enough isn&apos;t good enough. I take pride in delivering work that 
-                    exceeds expectations and stands the test of time.
+                    Good enough isn&apos;t good enough. I take pride in
+                    delivering work that exceeds expectations and stands the
+                    test of time.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -237,7 +263,8 @@ export default function About() {
               Ready to work together?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              I&apos;m always excited to take on new challenges and help bring your vision to life.
+              I&apos;m always excited to take on new challenges and help bring
+              your vision to life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -251,6 +278,14 @@ export default function About() {
                 className="inline-flex items-center justify-center px-8 py-3 border border-primary-foreground text-primary-foreground rounded-lg font-medium hover:bg-primary-foreground hover:text-primary transition-colors"
               >
                 View My Work
+              </a>
+              {/* Download CV: place the PDF at public/Nicholas_Obazei_pso.pdf to enable this link */}
+              <a
+                href="/Nicholas_Obazei_pso.pdf"
+                download
+                className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+              >
+                Download CV
               </a>
             </div>
           </div>

@@ -72,13 +72,19 @@ export default async function ProjectPage({ params }: Props) {
                   </Button>
                   <Button variant="outline">Download Case Study</Button>
                   {/* Download CV - place your PDF in /public with this exact filename to enable download */}
+                  {/* If you want the CV downloadable from the site, put the file
+                  at public/Nicholas_Obazei_pso.pdf and uncomment the button below. */}
+                  {/*
                   <Button asChild>
-                    <a href="/Nicholas_Obazei_pso.pdf" download className="inline-flex items-center">
+                    <a
+                      href="/Nicholas_Obazei_pso.pdf"
+                      download
+                      className="inline-flex items-center"
+                    >
                       Download CV
                     </a>
                   </Button>
-                  
-                  {/* If the PDF isn't in public/, copy the provided file to public/Nicholas_Obazei_pso.pdf */}
+                  */}
                 </div>
               </div>
               <div className="md:col-span-1">
