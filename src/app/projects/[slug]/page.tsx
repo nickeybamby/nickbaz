@@ -6,12 +6,11 @@ import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
-type Props = {
-  params: { slug: string } | any;
-};
+type ParamsObj = { slug: string };
+type Params = ParamsObj | Promise<ParamsObj>;
 
-export default async function ProjectPage({ params }: Props) {
-  const { slug } = await params;
+export default async function ProjectPage({ params }: { params: Params }) {
+  const { slug } = (await params) as ParamsObj;
   const project = findProjectBySlug(slug);
   if (!project) return notFound();
 

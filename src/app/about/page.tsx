@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -273,12 +274,12 @@ export default function About() {
               >
                 Start a Project
               </a>
-              <a
+              <Link
                 href="/projects"
                 className="inline-flex items-center justify-center px-8 py-3 border border-primary-foreground text-primary-foreground rounded-lg font-medium hover:bg-primary-foreground hover:text-primary transition-colors"
               >
                 View My Work
-              </a>
+              </Link>
               {/* Download CV: place the PDF at public/Nicholas_Obazei_pso.pdf to enable this link */}
               <a
                 href="/Nicholas_Obazei_pso.pdf"
