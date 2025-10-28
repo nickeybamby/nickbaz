@@ -19,18 +19,18 @@ const projects = [
     description:
       "Successfully transformed a traditional waterfall development team to Agile methodology, improving delivery time by 60% and team satisfaction.",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+      "https://res.cloudinary.com/dt7fmvznd/image/upload/v1761680585/Screenshot_301_n3kr0r.png",
     tags: ["Agile", "Team Leadership", "Process Improvement"],
     category: "Project Management",
     link: "/projects/novalaunch",
   },
   {
     id: 2,
-    title: "Cross-Functional Team Leadership",
+    title: "CHP - Community Help Platform",
     description:
       "Led a distributed team of 12 developers, designers, and QA engineers across multiple time zones to deliver a complex SaaS platform.",
     image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=300&fit=crop",
+      "https://res.cloudinary.com/dt7fmvznd/image/upload/v1761676679/Screenshot_297_s6ifq8.png",
     tags: [
       "Team Leadership",
       "Remote Management",
@@ -38,15 +38,15 @@ const projects = [
       "Stakeholder Management",
     ],
     category: "Project Management",
-    link: "/projects/saas-platform",
+    link: "/projects/chp",
   },
   {
     id: 3,
-    title: "Digital Transformation Program",
+    title: "ChantUp MVP",
     description:
       "Managed a $2M digital transformation program for a Fortune 500 company, coordinating multiple vendors and internal teams.",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      "https://res.cloudinary.com/dt7fmvznd/image/upload/v1761681093/Screenshot_302_b573k2.png",
     tags: [
       "Program Management",
       "Digital Transformation",
@@ -54,7 +54,7 @@ const projects = [
       "Enterprise",
     ],
     category: "Project Management",
-    link: "/projects/digital-transformation",
+    link: "/projects/chantup",
   },
   // {
   //   id: 4,
