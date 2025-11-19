@@ -67,7 +67,8 @@ export function Navbar() {
                           </Link>
                         </NavigationMenuLink>
                       </div>
-                      <div className="grid gap-2">
+                      {/* other links from dropdown */}
+                      {/* <div className="grid gap-2">
                         <Link
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           href="/project-management/agile"
@@ -90,11 +91,13 @@ export function Navbar() {
                             Cross-functional team management
                           </p>
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+
+                {/* frontend link */}
+                {/* <NavigationMenuItem>
                   <NavigationMenuTrigger>
                     Frontend Development
                   </NavigationMenuTrigger>
@@ -141,7 +144,7 @@ export function Navbar() {
                       </div>
                     </div>
                   </NavigationMenuContent>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
                 <NavigationMenuItem>
                   <NavigationMenuLink
                     asChild

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const footerLinks = {
   services: [
     { name: "Project Management", href: "/project-management" },
-    { name: "Frontend Development", href: "/frontend-development" }
+    // { name: "Frontend Development", href: "/frontend-development" }
     // { name: "Consulting", href: "/consulting" },
     // { name: "Team Training", href: "/training" }
   ],

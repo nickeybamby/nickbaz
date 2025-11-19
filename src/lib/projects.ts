@@ -56,10 +56,10 @@ export const projects: Project[] = [
     id: 2,
     title: "NovaLaunch",
     description:
-      "Successfully transformed a traditional waterfall development team to Agile methodology, improving delivery time by 60% and team satisfaction.",
+      "Led the end-to-end delivery of the project — defining requirements, coordinating cross-functional teams, managing timelines, and ensuring the platform met usability, performance, and scalability standards. Through structured planning, clear stakeholder communication, and disciplined execution, the project was completed successfully and delivered a reliable, user-centric solution that empowers creators and startups to launch smarter.",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
-    tags: ["Agile", "Scrum", "Team Leadership", "Process Improvement"],
+    tags: ["Agile", "Scrum", "Team Leadership", "Stakeholder Management", "Strategic Planning"],
     category: "Project Management",
     link: "/projects/novalaunch",
     metrics: [

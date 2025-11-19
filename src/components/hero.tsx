@@ -14,7 +14,7 @@ export function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <Badge variant="secondary" className="w-fit">
-                Technical Project Manager
+                Technical Project Manager | VA
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
                 Hi, I&apos;m <span className="text-primary">Nicholas</span>
@@ -49,7 +49,7 @@ export function Hero() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">3+</div>
+                <div className="text-3xl font-bold text-primary">4+</div>
                 <div className="text-sm text-muted-foreground">
                   Years Experience
                 </div>

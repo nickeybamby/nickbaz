@@ -399,13 +399,13 @@ export default function ProjectManagement() {
               >
                 Schedule Consultation
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
               >
                 Download Case Studies
-              </Button>
+              </Button> */}
             </div>
           </div>
         </section>

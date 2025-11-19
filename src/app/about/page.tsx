@@ -27,7 +27,7 @@ export default function About() {
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 I&apos;m Nicholas Obazei, a passionate technical project manager
-                and frontend developer with over 3 years of experience
+                and frontend developer with over 4 years of experience
                 delivering exceptional digital experiences.
               </p>
             </div>

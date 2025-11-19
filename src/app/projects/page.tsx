@@ -32,7 +32,7 @@ export default function Projects() {
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 A collection of projects that showcase my expertise in project
-                management and frontend development across various industries
+                management and development process across various industries
                 and team sizes.
               </p>
             </div>
@@ -186,7 +186,7 @@ export default function Projects() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">50+</div>
+                <div className="text-4xl font-bold text-primary mb-2">20+</div>
                 <div className="text-sm text-muted-foreground">
                   Projects Delivered
                 </div>
@@ -198,7 +198,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">$2M+</div>
+                <div className="text-4xl font-bold text-primary mb-2">$200k+</div>
                 <div className="text-sm text-muted-foreground">
                   Budget Managed
                 </div>

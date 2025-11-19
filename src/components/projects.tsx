@@ -17,10 +17,10 @@ const projects = [
     id: 1,
     title: "NovaLaunch",
     description:
-      "Successfully transformed a traditional waterfall development team to Agile methodology, improving delivery time by 60% and team satisfaction.",
+      "Led the end-to-end delivery of the project — defining requirements, coordinating cross-functional teams...",
     image:
       "https://res.cloudinary.com/dt7fmvznd/image/upload/v1761680585/Screenshot_301_n3kr0r.png",
-    tags: ["Agile", "Team Leadership", "Process Improvement"],
+    tags: ["Agile", "Scrum", "Team Leadership", "Stakeholder Management", "Strategic Planning"],
     category: "Project Management",
     link: "/projects/novalaunch",
   },
@@ -28,7 +28,7 @@ const projects = [
     id: 2,
     title: "CHP - Community Help Platform",
     description:
-      "Led a distributed team of 12 developers, designers, and QA engineers across multiple time zones to deliver a complex SaaS platform.",
+      "Led a distributed team of 5 developers, designers, and QA engineers across multiple time zones to deliver a complex SaaS platform.",
     image:
       "https://res.cloudinary.com/dt7fmvznd/image/upload/v1761676679/Screenshot_297_s6ifq8.png",
     tags: [
@@ -44,7 +44,7 @@ const projects = [
     id: 3,
     title: "ChantUp MVP",
     description:
-      "Managed a $2M digital transformation program for a Fortune 500 company, coordinating multiple vendors and internal teams.",
+      "Managed a digital transformation program for a Multinational industry, coordinating multiple vendors and internal teams.",
     image:
       "https://res.cloudinary.com/dt7fmvznd/image/upload/v1761681093/Screenshot_302_b573k2.png",
     tags: [
