@@ -28,9 +28,9 @@ const contactMethods = [
   {
     title: "LinkedIn",
     description: "Connect professionally",
-    value: "linkedin.com/in/nickeybamby",
+    value: "linkedin.com/in/nicholasobazei",
     icon: "💼",
-    link: "https://linkedin.com/in/nickeybamby",
+    link: "https://linkedin.com/in/nicholasobazei",
   },
   {
     title: "GitHub",

@@ -23,6 +23,9 @@ export default function Projects() {
         {/* Hero Section */}
         <section className="py-24 bg-gradient-to-br from-background via-background to-muted/20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-4 text-2xl text-red-500 font-medium mx-auto text-center">Attention! This page is still under development. 
+              <br /> I have used placeholders to currently represent the image contents. 
+              <br /> Please bear with me.</div>
             <div className="max-w-4xl mx-auto text-center">
               <Badge variant="secondary" className="mb-4">
                 Portfolio
