@@ -99,12 +99,12 @@ const services = [
 
 const caseStudies = [
   {
-    title: "Digital Transformation at Fortune 500 Company",
+    title: "Digital Transformation ",
     description:
-      "Led a $2M digital transformation initiative, reducing time-to-market by 40% and improving customer satisfaction scores.",
+      "Led a digital transformation initiative, reducing time-to-market by 40% and improving customer satisfaction scores.",
     metrics: [
       "40% faster delivery",
-      "$500K cost savings",
+      "10% cost savings",
       "95% team satisfaction",
       "50% reduction in defects",
     ],
@@ -119,7 +119,7 @@ const caseStudies = [
       "60% better predictability",
       "35% faster releases",
       "80% defect reduction",
-      "100% team adoption",
+      "90% team adoption",
     ],
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
